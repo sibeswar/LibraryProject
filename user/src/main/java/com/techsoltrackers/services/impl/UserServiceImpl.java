@@ -12,6 +12,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     @Autowired
     UserDAO userDAO;
+
     @Override
     public User createUser(User user) {
         return userDAO.createUser(user);
@@ -29,7 +30,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User updateUser(Long userId, User userDetails) {
-        return userDAO.updateUser(userId,userDetails);
+        return userDAO.updateUser(userId, userDetails);
     }
 
     @Override
